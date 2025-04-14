@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Ride EV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Add Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Eco Ride EV</div>
+        <nav>
+            <ul>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#footer">About Us</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>The Future of Electric Mobility</h1>
+        <p>Discover our range of high-performance electric vehicles designed for the modern commuter.</p>
+        <a href="#vehicles" class="cta-button">Explore Models</a>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+        <h2>Our Electric Vehicle Range</h2>
+        <div class="vehicle-grid">
+            <div class="vehicle-card">
+                <div class="vehicle-image" style="background-image: url('images/bike_1.jpg');"></div> <!--Bike Model Image-->
+                <div class="vehicle-info">
+                    <h3>BMW  beast</h3> <!--Bike Model Name-->
+                    <p>Premium electric scooter with 120km range</p>     <!---Bike Description-->
+                    <div class="price">₹85,000</div>                    <!---Bike Price-->
+                    <a href="#contact" class="cta-button">Book Test Ride</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <div class="vehicle-image" style="background-image: url('images/bike_2.jpg');"></div>    <!--Bike Model Image-->
+                <div class="vehicle-info">
+                    <h3>Vaspa V2</h3>
+                    <p>Performance electric scooter with 150km range</p>      <!---Bike Description-->
+                    <div class="price">₹1,05,000</div>                          <!---Bike Price-->
+                    <a href="#contact" class="cta-button">Book Test Ride</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <div class="vehicle-image" style="background-image: url('bike3.jpg');"></div>    <!--Bike Model Image-->
+                <div class="vehicle-info">
+                    <h3>Model X3</h3>         <!--Model name-->
+                    <p>Luxury electric scooter with 200km range</p>     <!---Bike Description-->
+                    <div class="price">₹1,35,000</div>                  <!---Bike Price-->
+                    <a href="#contact" class="cta-button">Book Test Ride</a>
+                </div>
+            </div>
+
+            <div class="vehicle-card">
+                <div class="vehicle-image" style="background-image: url('bike3.jpg');"></div>    <!--Bike Model Image-->
+                <div class="vehicle-info">
+                    <h3>Model X3</h3>                 <!--Model Name-->
+                    <p>Luxury electric scooter with 200km range</p>     <!---Bike Description-->
+                    <div class="price">₹1,35,000</div>                  <!---Bike Price-->
+                    <a href="#contact" class="cta-button">Book Test Ride</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-box">
+            <i class="fas fa-tools"></i>
+            <h3>Bike Servicing</h3> <!--change into yours option-->
+            <p>Get regular maintenance and full check-ups to keep your EV bike in top shape.</p>  <!--Description-->
+          </div>
+          <div class="service-box">
+            <i class="fas fa-charging-station"></i>
+            <h3>Charging Solutions</h3>
+            <p>Home and showroom-based fast EV charging options available for all customers.</p>
+          </div>
+          <div class="service-box">
+            <i class="fas fa-handshake"></i>
+            <h3>Easy Financing</h3>
+            <p>We offer simple EMI options with zero down payment and low interest rates.</p>
+          </div>
+          <div class="service-box">
+            <i class="fas fa-road"></i>
+            <h3>Test Rides</h3>
+            <p>Book a test ride and experience the thrill of riding our eco-friendly EV bikes.</p>
+          </div>
+        </div>
+      </section>
+      
+<!---Iske Sath cher char maat kar BSDK-->
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Your Mobile Number" required pattern="[0-9]{10}" maxlength="10" minlength="10">
+            <input type="email" placeholder="Your Gmail Address (Optional)">
+            <label for="bike-model">Select Your Bike Model (Optional)</label>
+            <select name="bike-model" id="bike-model">
+                <option value="" disabled selected>Select Your Bike Model (Optional)</option>
+                <!--iske andar kar sakta hai-->
+                <option value="Model X1">BMW beast</option>   <!--Add bike models-->
+                <option value="Model X2">Vaspa V2</option>
+                <option value="Model X3">Model X3</option>
+                <option value="Model X4">Model X4</option>
+                <!--yaha tak-->
+            </select>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+    <!--Bas yaha tak cher char mat karna BSDK-->
+
+    <footer id="footer">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#vehicles">Our Vehicles</a></li>   <!--Change into yours option-->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#test-drive">Book Test Drive</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Showrooms</h3>
+            <ul>
+                <li>krishnagar</li>      <!---Showroom Name-->
+                <li>krihnagar</li>       <!--Address-->
+                <li>krishnagar</li>
+                <li>krishnagar</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                
+                <li>Phone: +91 99999999</li>      <!--add your phone NUmber. if you have multiple then add otherwise non-->
+                <li>Phone: +91 77777777</li>
+
+                <li>Email: mail1@gmail.com</li>   <!--add your Email id. if you have multiple then add otherwise non-->
+                <li>Service: mail2@gmail.com</li>
+                <li>Sales: mail@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              
+          </div>
+          
+    </footer>
+    
+    
+    <div class="copyright">
+        &copy; 2023 Your EV Brand. All Rights Reserved.
+    </div>
+    
+</body>
+
+</html>
